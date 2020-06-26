@@ -1,0 +1,11 @@
+﻿version: '3'
+services:
+ friendservice:
+  image: 127.0.0.1:5000/friendservice
+  hostname: "friendservice"
+  networks:
+   - microservicenetwork
+
+networks:
+ microservicenetwork:
+  external: true
